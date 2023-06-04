@@ -1,0 +1,81 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.compte-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compte-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.compte-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.compte-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.compte-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #147a3d;
+  transition: color 0.3s ease;
+}
+
+.compte-link:hover {
+  color: #147a3d;
+}
+
+.compte-container button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #147a3d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.compte-container button:hover {
+  background-color: #147a3d;
+}
+
+/* Autres styles spécifiques à la page de compte */
+
+@media screen and (max-width: 600px) {
+  .compte-container {
+    padding: 10px;
+  }
+
+  .compte-container h2 {
+    font-size: 24px;
+  }
+
+  .compte-links li {
+    margin-right: 8px;
+  }
+
+  .compte-link {
+    font-size: 16px;
+  }
+
+  .compte-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

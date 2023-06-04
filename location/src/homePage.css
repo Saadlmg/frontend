@@ -1,0 +1,165 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ Ceci sert a faire des rotation
+ici on s'arrete
+
+  
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section.banner {
+  background-image: url("./image/audiRS6.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+
+section.banner h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section.banner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+section.banner .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+section.services {
+  padding: 50px;
+}
+
+section.services h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.service h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li.right {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

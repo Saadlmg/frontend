@@ -1,0 +1,236 @@
+/*.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-container label {
+    font-weight: bold;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-container textarea {
+    resize: vertical;
+  }
+  
+  .contact-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-container button:hover {
+    background-color: #555;
+  }
+
+  .home-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  .home-link:hover {
+    background-color: #555;
+  }
+  */
+
+ /* .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-container form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-container label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .contact-container textarea {
+    resize: vertical;
+  }
+  
+  .contact-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-container button:hover {
+    background-color: #555;
+  }
+  
+  .home-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .home-link:hover {
+    background-color: #555;
+  }
+  
+  .home-link::before {
+    content: '\2190';
+    margin-right: 5px;
+  }
+  */
+
+ /* contact.css */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-container p {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-address,
+.contact-phone,
+.contact-email {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.contact-address h3,
+.contact-phone h3,
+.contact-email h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-address p,
+.contact-phone p,
+.contact-email p {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.contact-container form {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-container label {
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-container textarea {
+  resize: vertical;
+}
+
+.contact-container button {
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #555;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.home-link:hover {
+  background-color: #555;
+}

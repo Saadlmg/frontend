@@ -1,0 +1,57 @@
+.admin-panel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .admin-panel button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .admin-panel button:hover {
+    background-color: #45a049;
+  }
+  
+  .admin-panel p {
+    margin-bottom: 5px;
+  }
+  
+  .admin-panel .admin-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .admin-panel .admin-item p {
+    font-weight: bold;
+  }
+  
+  .admin-panel .admin-item button {
+    background-color: #f44336;
+  }
+  
+  .admin-panel .admin-item button:hover {
+    background-color: #d32f2f;
+  }
+  
