@@ -11,7 +11,7 @@ const Description = () => {
   useEffect(() => {
     const fetchVehicle = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:3000/api/vehicules/${id}`, {
+      const response = await fetch(`https://rent-a-car-gie0.onrender.com/api/vehicules/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

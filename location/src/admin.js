@@ -10,7 +10,7 @@ const Admin = () => {
     // Check if the user is logged in and is an admin
     const token = localStorage.getItem('token');
     if (token) {
-      axios.get('http://localhost:3000/api/admin', {
+      axios.get('https://rent-a-car-gie0.onrender.com/api/admin', {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((response) => {
@@ -62,7 +62,7 @@ const AdminPanel = () => {
   // Fonction pour récupérer la liste des admins
   const fetchAdmins = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/admins'); // Modifier l'URL de l'API si nécessaire
+      const response = await axios.get('https://rent-a-car-gie0.onrender.com/api/admins'); // Modifier l'URL de l'API si nécessaire
       setAdmins(response.data);
     } catch (error) {
       console.error(error);
@@ -72,7 +72,7 @@ const AdminPanel = () => {
   // Fonction pour créer un nouvel admin
   const createAdmin = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/admins', newAdmin); // Modifier l'URL de l'API si nécessaire
+      const response = await axios.post('https://rent-a-car-gie0.onrender.com/api/admins', newAdmin); // Modifier l'URL de l'API si nécessaire
       setAdmins([...admins, response.data]);
       setNewAdmin({
         nom: '',
@@ -88,7 +88,7 @@ const AdminPanel = () => {
   // Fonction pour supprimer un admin
   const deleteAdmin = async (adminId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/admins/${adminId}`); // Modifier l'URL de l'API si nécessaire
+      await axios.delete(`https://rent-a-car-gie0.onrender.com/api/admins/${adminId}`); // Modifier l'URL de l'API si nécessaire
       setAdmins(admins.filter((admin) => admin.id !== adminId));
     } catch (error) {
       console.error(error);
@@ -181,7 +181,7 @@ const AdminPanel = () => {
 
   const fetchLocations = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/locations', {
+      const response = await axios.get('https://rent-a-car-gie0.onrender.com/api/locations', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setLocations(response.data);
@@ -192,7 +192,7 @@ const AdminPanel = () => {
 
   const deleteLocation = async (locationId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/locations/${locationId}`, {
+      await axios.delete(`https://rent-a-car-gie0.onrender.com/api/locations/${locationId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setLocations(locations.filter((location) => location.id !== locationId));
@@ -204,7 +204,7 @@ const AdminPanel = () => {
   // Fonction pour récupérer la liste des admins
   const fetchAdmins = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/admins', {
+      const response = await axios.get('https://rent-a-car-gie0.onrender.com/api/admins', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAdmins(response.data);
@@ -215,7 +215,7 @@ const AdminPanel = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/clients', {
+      const response = await axios.get('https://rent-a-car-gie0.onrender.com/api/clients', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setClients(response.data);
@@ -226,7 +226,7 @@ const AdminPanel = () => {
 
   const deleteClient = async (clientId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/clients/${clientId}`, {
+      await axios.delete(`https://rent-a-car-gie0.onrender.com/api/clients/${clientId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setClients(clients.filter((client) => client.id !== clientId));
@@ -238,7 +238,7 @@ const AdminPanel = () => {
   // Fonction pour créer un nouvel admin
   const createAdmin = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/admins', newAdmin, {
+      const response = await axios.post('https://rent-a-car-gie0.onrender.com/api/admins', newAdmin, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAdmins([...admins, response.data]);
@@ -256,7 +256,7 @@ const AdminPanel = () => {
   // Fonction pour supprimer un admin
   const deleteAdmin = async (adminId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/admins/${adminId}`, {
+      await axios.delete(`https://rent-a-car-gie0.onrender.com/api/admins/${adminId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAdmins(admins.filter((admin) => admin.id !== adminId));

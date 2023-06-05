@@ -16,12 +16,12 @@ const Login = ({ onClose }) => {
     try {
       let response;
       if (isRegistering) {
-        response = await axios.post('http://localhost:3000/api/clients/', {
+        response = await axios.post('https://rent-a-car-gie0.onrender.com/api/clients/', {
           email: username,
           mot_de_passe: password,
         });
       } else {
-        response = await axios.post('http://localhost:3000/api/clients/login', {
+        response = await axios.post('https://rent-a-car-gie0.onrender.com/api/clients/login', {
           email: username,
           password: password,
         });
@@ -114,12 +114,12 @@ const Login = ({ onClose }) => {
     try {
       let response;
       if (isRegistering) {
-        response = await axios.post('http://localhost:3000/api/clients/', {
+        response = await axios.post('https://rent-a-car-gie0.onrender.com/api/clients/', {
           email: username,
           mot_de_passe: password,
         });
       } else {
-        response = await axios.post('http://localhost:3000/api/clients/login', {
+        response = await axios.post('https://rent-a-car-gie0.onrender.com/api/clients/login', {
           email: username,
           password: password,
         });

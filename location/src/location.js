@@ -11,7 +11,7 @@ const Location = () => {
   useEffect(() => {
     const fetchVehicle = async () => {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:3000/api/vehicules/${id}`, {
+      const response = await fetch(`https://rent-a-car-gie0.onrender.com/api/vehicules/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -54,7 +54,7 @@ const Location = () => {
     const cout_total = vehicle.price * calculatedDuration;
     const client_id = localStorage.getItem('id');
 
-    const response = await fetch('http://localhost:3000/api/locations/', {
+    const response = await fetch('https://rent-a-car-gie0.onrender.com/api/locations/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

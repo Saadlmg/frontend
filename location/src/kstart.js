@@ -5,7 +5,7 @@ const addVehiclesToDatabase = async () => {
   try {
     // Make an HTTP POST request to add vehicles to the database
     for (const vehicle of vehicles) {
-      await axios.post('http://localhost:3000/api/vehicles', vehicle);
+      await axios.post('https://rent-a-car-gie0.onrender.com/api/vehicles', vehicle);
     }
     console.log('Vehicles added to the database successfully!');
   } catch (error) {

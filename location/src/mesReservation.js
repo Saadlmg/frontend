@@ -9,7 +9,7 @@ const MesReservation = () => {
   useEffect(() => {
     const fetchReservations = async () => {
       const clientId = localStorage.getItem('id');  // Get client id from local storage
-      const response = await fetch(`http://localhost:3000/api/locations/client/${clientId}`);
+      const response = await fetch(`https://rent-a-car-gie0.onrender.com/api/locations/client/${clientId}`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

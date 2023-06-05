@@ -335,7 +335,7 @@ const Vehicule = () => {
   const [vehicles, setVehicles] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/vehicules')
+    fetch('https://rent-a-car-gie0.onrender.com/api/vehicules')
       .then(response => response.json())
       .then(data => setVehicles(data))
       .catch(error => console.error(error));
